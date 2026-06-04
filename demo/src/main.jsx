@@ -7,6 +7,6 @@ import Hooks from './hooks.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <Hooks />
+    {/* <Hooks /> */}
   </StrictMode>,
 )
