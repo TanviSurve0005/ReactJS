@@ -2,26 +2,26 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 export default function Header() {
     return (
-        <header className="shadow sticky z-50 top-0">
-            <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+        <header className="sticky z-50 top-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 shadow-lg">
+            <nav className="px-4 lg:px-6 py-4">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    <Link to="/" className="flex items-center">
+                    <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
                         <img
                             src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                            className="mr-3 h-12"
+                            className="mr-3 h-12 hover:scale-105 transition-transform"
                             alt="Logo"
                         />
                     </Link>
-                    <div className="flex items-center lg:order-2">
+                    <div className="flex items-center lg:order-2 space-x-3">
                         <Link
                             to="#"
-                            className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            className="text-gray-200 hover:text-white hover:bg-gray-700 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2.5 lg:py-3 transition-all duration-200 focus:outline-none"
                         >
                             Log in
                         </Link>
                         <Link
                             to="#"
-                            className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            className="text-white bg-gradient-to-r from-orange-500 to-orange-700 hover:from-orange-600 hover:to-orange-800 focus:ring-4 focus:ring-orange-300 font-semibold rounded-lg text-sm px-4 lg:px-5 py-2.5 lg:py-3 transition-all duration-200 focus:outline-none shadow-md hover:shadow-lg"
                         >
                             Get started
                         </Link>
