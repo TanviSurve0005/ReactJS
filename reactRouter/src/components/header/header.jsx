@@ -30,13 +30,13 @@ export default function Header() {
                         className="justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
                         id="mobile-menu-2"
                     >
-                        <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 w-full lg:w-auto">
                             
                              <li>
                                 <NavLink
                                 to="/"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? 'text-orange-700' : 'text-gray-700'} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 rounded transition-all duration-200 ${isActive ? 'text-orange-400 bg-gray-700 lg:bg-transparent' : 'text-gray-300 hover:text-orange-400'} border-b border-gray-700 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:p-0`
                                     }
                                 >
                                     Home
@@ -44,9 +44,9 @@ export default function Header() {
                             </li>
                              <li>
                                 <NavLink
-                                to= "/about"
+                                to="/about"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? 'text-orange-700' : 'text-gray-700'} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 rounded transition-all duration-200 ${isActive ? 'text-orange-400 bg-gray-700 lg:bg-transparent' : 'text-gray-300 hover:text-orange-400'} border-b border-gray-700 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:p-0`
                                     }
                                 >
                                     About Us
@@ -57,7 +57,7 @@ export default function Header() {
                                 <NavLink
                                 to="/contact"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? 'text-orange-700' : 'text-gray-700'} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 rounded transition-all duration-200 ${isActive ? 'text-orange-400 bg-gray-700 lg:bg-transparent' : 'text-gray-300 hover:text-orange-400'} border-b border-gray-700 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:p-0`
                                     }
                                 >
                                     Contact Us
@@ -68,7 +68,7 @@ export default function Header() {
                                 <NavLink
                                 to="/github"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? 'text-orange-700' : 'text-gray-700'} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 rounded transition-all duration-200 ${isActive ? 'text-orange-400 bg-gray-700 lg:bg-transparent' : 'text-gray-300 hover:text-orange-400'} border-b border-gray-700 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:p-0`
                                     }
                                 >
                                     Github
